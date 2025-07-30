@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #001f3f, #0074D9);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin-top: 30px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+button {
+  background: #0074D9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.popup-content iframe {
+  width: 400px;
+  height: 600px;
+  border: none;
+}
+.thankyou {
+  margin-top: 30px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

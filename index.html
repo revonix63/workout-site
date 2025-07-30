@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Music Offers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Choose Your Music Plan</h1>
+    <div class="cards">
+      <div class="card">
+        <h2>Starting Venture</h2>
+        <p>$5 - Get 10 music tracks (warm-up to cardio)</p>
+        <button onclick="openPopup('https://teferi3.gumroad.com/l/StartingVenture')">Buy Now</button>
+      </div>
+      <div class="card">
+        <h2>Pro Fit Pack</h2>
+        <p>$11 - 25 personalized workout musics with description on SoundCloud</p>
+        <button onclick="openPopup('https://teferi3.gumroad.com/l/jicmd')">Buy Now</button>
+      </div>
+      <div class="card">
+        <h2>Elite Voice Set</h2>
+        <p>$20 - Premium voice tracks and personalized sound details</p>
+        <button onclick="openPopup('https://teferi3.gumroad.com/l/jtrutb')">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <iframe id="gumroadFrame" src="" frameborder="0"></iframe>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <div id="thankyou" class="thankyou hidden">
+    <h2>Thank you for your purchase!</h2>
+    <p>We’ll get started on your custom music now.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
